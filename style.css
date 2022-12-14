@@ -1,0 +1,234 @@
+/*
+font-family: 'Diplomata SC', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Special Elite', cursive;
+*/
+
+
+/*CSS RESET*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/*Header*/
+header {
+    height: 150px;
+    background-image: url(images/camera-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+    border-bottom: 2px solid darkorange;
+    color: darkorange;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    font-family: 'Diplomata SC', cursive;
+    text-align: end;
+    line-height: 1;
+}
+
+/*Main*/
+main {
+    display: flex;
+    padding: 5px;
+    margin-top: 5px;
+    justify-content: space-around;
+
+}
+
+/* Aside Recap*/
+.modal-window {
+    width: 110px;
+    min-height: 350px;
+    background-color: rgba(201, 120, 27, 0.363);
+    border-right: 2px solid orange;
+    border-radius: 0 5px 5px 0;
+    padding: 5px;
+    color: rgb(255, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    position:fixed;
+
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.modal-box {
+    margin: 8px 2px 8px 2px;
+    background-color: goldenrod;
+    border-radius: 40%;
+    padding: 2px;
+}
+
+.close-modal-button{
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 8px 0 8px 0;
+}
+
+
+.modal-hidden {
+    visibility:hidden;
+}
+
+
+.recap-button {
+    background-color: gold;
+    color: rgb(179, 17, 17);
+    font-family: 'Diplomata SC', cursive;
+    font-size: 15px;
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+    position: sticky;
+    top: 50%;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.recap-button-hidden {
+    visibility: hidden;
+}
+
+.recap-button:hover {
+    animation-name: wiggle;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+@keyframes wiggle {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+
+/*Section*/
+section {
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+
+/*Lista Ticket*/
+.ticket {
+    border: 1px dashed black;
+    border-radius: 10px;
+    background-image: url(/images/dottedorange.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    padding: 5px;
+    margin-bottom: 8px;
+    font-family: 'Special Elite', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+}
+  
+.ticket-top {
+    padding: 5px;
+    text-align: center;
+}
+
+.ticket-bottom {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.ticket-date {
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+  
+.ticket-button {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: large;
+    margin-right: -15px;
+    cursor: pointer;
+}
+
+
+/*Form*/
+#ticket-form {
+    background-color: rgba(213, 114, 0, 0.237);
+    border: 2px solid orange;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 8px;
+
+    color: orange;
+    text-align: center;
+}
+
+#form-title {
+    width: 80%;
+}
+
+#form-genre {
+    width: 80%;
+}
+#form-rating {
+    width: 80px;
+}
+.form-button {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent; 
+    color: darkorange;
+}

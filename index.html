@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Diplomata+SC&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Diplomata+SC&family=Special+Elite&display=swap" rel="stylesheet">
+        <!--style-->
+        <link rel="stylesheet" href="style.css">
+
+        <title>My Ticket List</title>
+    </head>
+
+<body>
+    <div class="container">
+<!--Header-->
+        <header>
+            <h1 class="header-title">Ticket <br> List</h1>
+        </header>
+
+<!--Main-->
+        <main>
+<!--Aside-->
+            
+            <aside class="recap">
+                <button class="recap-button">Recap</button>
+                
+                <div class="modal-window modal-hidden">
+                    <div class="total-movies modal-box">
+                        🎬<br>Film visti:<br> <span class="total-tickets">0</span>
+                    </div>
+                    <div class="total-average modal-box">
+                        ⭐<br>Voto medio:<br> <span class="average-rating">/</span>
+                    </div>
+                    <!--
+                    <div class="total-fantasy-label modal-box">
+                        Fantasy visti: <br> <span class="total-fantasy">0</span>
+                    </div>
+                    -->
+                    
+                    <button class="close-modal-button">❌</button>
+                </div>
+                
+            </aside>
+    
+<!--Section-->
+            <section>
+<!-- Lista -->
+                <ul class="ticket-list">
+                    <!--
+                    <li class="ticket">
+                    <div class="ticket-top">
+                        <h2 class="ticket-title">Il signore degli anelli</h2>
+                        <p class="ticket-genre">Fantasy</p>
+                    </div>
+                    <div class="ticket-bottom">
+                    <div class="ticket-date">20/11/22</div>
+                    <strong class="ticket-rating">5⭐</strong>
+                    <button class="ticket-button">🗑</button>
+                    </div>
+                    </li>
+                    --> 
+                </ul>
+
+<!--Form-->
+                <form id="ticket-form">
+
+                    <input id="form-title" type="text" maxlength="35" placeholder="Titolo" required autofocus>
+
+                    <input id="form-genre" type="text" list="form-options" placeholder="Genere  ↴" required/>
+                    <datalist id="form-options">
+                        <option value="Comedy">Comedy</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Action">Action</option>
+                        <option value="Altro">Altro</option>
+                    </datalist>
+                    
+                    <div>
+                    <label for="form-rating">⭐:</label>
+                    <input id="form-rating" type="number" min="0" max="5" step="1" placeholder="(da 1 a 5)" required>
+                    </div>
+
+                    <div>
+                    <label for="form-date">Data:</label>
+                    <input type="date" id="form-date" required>
+                    </div>
+
+                    <button class="form-button">🎟</button>
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+<!--Script-->
+<script src="script.js"></script>
+</body>
+
+
+</html>
